@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Digitizing Inspection Forms: Workflow Lessons | Jerry Sun</title>
+
+  <meta
+    name="description"
+    content="A student engineering perspective on moving paper inspections into Maximo: conditional questions, required responses, and testing changes carefully."
+  >
+  <meta name="author" content="Jerry Sun">
+
+  <meta property="og:type" content="article">
+  <meta
+    property="og:title"
+    content="What digitizing an inspection form taught me about workflows"
+  >
+  <meta
+    property="og:description"
+    content="Lessons about question order, conditional logic, and testing from working with digital inspection forms."
+  >
+  <meta name="twitter:card" content="summary">
+
+  <!-- Add canonical and og:url metadata once the article has a permanent URL. -->
+
+  <meta name="theme-color" content="#173e37">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">JS</span>
+        Jerry Sun
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="container article-wrap">
+
+      <!-- BREADCRUMB -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li aria-current="page">Inspection workflows</li>
+        </ol>
+      </nav>
+
+      <article aria-labelledby="article-title">
+
+        <!-- ARTICLE INTRODUCTION -->
+        <header class="article-header">
+          <p class="eyebrow">
+            The learning log / Engineering workflows
+          </p>
+
+          <h1 id="article-title">
+            What digitizing an inspection form taught me about
+            <span class="serif">workflows.</span>
+          </h1>
+
+          <p class="hero-copy">
+            Moving a form from paper to a screen is also a chance
+            to think about the steps someone follows.
+          </p>
+
+          <p class="small">
+            By Jerry Sun · Draft reflection
+          </p>
+
+          <!--
+            When publishing, add the actual publication date:
+
+            <p>
+              Published
+              <time datetime="YYYY-MM-DD">Month Day, Year</time>
+            </p>
+          -->
+        </header>
+
+        <div class="article-layout">
+
+          <!-- TABLE OF CONTENTS -->
+          <nav class="contents" aria-label="On this page">
+            <p class="eyebrow">On this page</p>
+
+            <ol>
+              <li>
+                <a href="#start">Start with the task</a>
+              </li>
+              <li>
+                <a href="#logic">Make each question useful</a>
+              </li>
+              <li>
+                <a href="#testing">Test small changes</a>
+              </li>
+              <li>
+                <a href="#takeaway">My takeaway</a>
+              </li>
+            </ol>
+          </nav>
+
+          <!-- ARTICLE CONTENT -->
+          <div class="article-body prose">
+            <p class="draft-note">
+              Draft reflection based on my Maximo inspection-form
+              work. I am still refining this article before publication.
+            </p>
+
+            <section id="start" aria-labelledby="start-title">
+              <h2 id="start-title">Start with the task</h2>
+
+              <p>
+                When I started working with Maximo Inspection Forms,
+                the visible task was to move questions from paper
+                into a digital form. But I also needed to think about
+                what the person completing the inspection would do next.
+              </p>
+
+              <p>
+                A question is part of a sequence. Its wording,
+                response type, and position can change how easy
+                that sequence is to follow.
+              </p>
+            </section>
+
+            <section id="logic" aria-labelledby="logic-title">
+              <h2 id="logic-title">Make each question useful</h2>
+
+              <p>
+                Required responses and conditional questions help
+                define the workflow. A follow-up question can appear
+                when an earlier answer makes it relevant.
+              </p>
+
+              <p>
+                For example, a sample inspection might ask whether
+                a visible issue is present. If the answer is yes,
+                a follow-up could request a description. This is
+                an illustrative example, rather than a description
+                of a specific company inspection.
+              </p>
+
+              <ul>
+                <li>
+                  Use wording that makes the requested observation clear.
+                </li>
+                <li>
+                  Choose a response type that fits the question.
+                </li>
+                <li>
+                  Show follow-up questions when their conditions are met.
+                </li>
+              </ul>
+            </section>
+
+            <section id="testing" aria-labelledby="testing-title">
+              <h2 id="testing-title">Test small changes</h2>
+
+              <p>
+                Sometimes a form reports an error while changes
+                are being submitted. Changing one thing at a time
+                makes it easier to investigate what triggered
+                the problem.
+              </p>
+
+              <p>
+                A useful record includes what changed, what I
+                expected to happen, and what actually happened.
+                It helps turn a vague error into something that
+                can be investigated.
+              </p>
+            </section>
+
+            <section id="takeaway" aria-labelledby="takeaway-title">
+              <h2 id="takeaway-title">My takeaway</h2>
+
+              <p>
+                A useful digital form connects clear questions
+                with a clear process. Learning to configure and
+                test that process has helped me think more
+                carefully about how people use engineering software.
+              </p>
+            </section>
+
+            <aside
+              class="article-callout"
+              aria-labelledby="next-title"
+            >
+              <h2 id="next-title">Related work</h2>
+
+              <p>
+                See how this connects to my co-op experience
+                and other practical projects.
+              </p>
+
+              <a href="index.html#projects">
+                Explore my engineering projects
+              </a>
+            </aside>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer container">
+    <p>© Jerry Sun · Engineering portfolio</p>
+    <a href="index.html#blog">Back to the learning log</a>
+  </footer>
+</body>
+</html>
